@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANDSON EXAM</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+    <body>
+        <div class="box1" style="display: flex" id="box1">
+          <div class="item-box1">
+            <img src="Louis Vuitton Trouville Bag - ₱8926.00.png" alt="lvbag" />
+            <h1>Louis Vuitton Trouville Bag</h1>
+            <p><strong>₱8926.00</strong></p>
+            <button type="button" class="buynow-btn" onclick="showBox()">
+              BUY NOW
+            </button>
+          </div>
+        </div>
+    
+        <div class="box2" style="display: none" id="box2">
+          <div class="product-details">
+            <p><u>Product Details</u></p>
+            <img src="Louis Vuitton Trouville Bag - ₱8926.00.png" alt="lvbag" />
+            <h2>Louis Vuitton Trouville Bag</h2>
+            <p style="color: orangered; font-weight: bold">₱8926.00</p>
+            <h3>Shipping to: Cagayan De Oro City</h3>
+            <h4>Shipping Fee: ₱50.00</h4>
+            <p>
+              Quantity
+              <button onclick="subQuantity()">-</button>
+              <span id="quantity-tag">0</span>
+              <button onclick="addQuantity()">+</button>
+            </p>
+          </div>
+          <div class="checkout-details" style="display: none" id="box3">
+            <p><u>Ready to checkout?</u></p>
+            <p id="Subtotal">SubTotal: 0</p>
+            <p id="QTY">QTY: 0</p>
+            <p class="ShippingFee">Shipping Fee: 50</p>
+            <p id="total">Total: 0</p>
+            <button onclick="Checkout()">Checkout</button>
+          </div>
+          <div id="box4">
+            <p>Your Order</p>
+            <p>Louis Vuitton Trouville Bag</p>
+            <img src="Louis Vuitton Trouville Bag - ₱8926.00.png" alt="lvbag">
+          </div>
+        </div>
+        <script src="script.js"></script>
+        
+      </body>
+    </html>
+    
+    
